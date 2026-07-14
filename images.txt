@@ -3,4 +3,4 @@ nginx
 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 xhofe/alist:latest
 #支持指定架构
---platform=linux/arm64 ascendai/pytorch:2.2.0-ubuntu22.04
+--platform=linux/arm64 ascendai/cann:8.5.2-910b-openeuler24.03-py3.11
