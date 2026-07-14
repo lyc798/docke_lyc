@@ -29,4 +29,4 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: |
-            ${{ secrets.ALIYUN_REGISTRY }}/${{ secrets.ALIYUN_NAME_SPACE }}/linux_arm64_torch_npu:8.5.2-torch2.9.0
+             crpi-f75zsuztpm3d1mow.cn-shanghai.personal.cr.aliyuncs.com/docke_lyc/linux_arm64_cann:8.5.2-torch2.9.0
