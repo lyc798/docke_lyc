@@ -1,0 +1,14 @@
+FROM --platform=linux/arm64 ascendai/cann:8.5.2-910b-openeuler24.03-py3.11
+
+SHELL ["/bin/bash", "-lc"]
+
+RUN python3 -m pip install -U pip -i https://mirrors.aliyun.com/pypi/simple/ && \
+    python3 -m pip install --no-cache-dir \
+      torch==2.9.0 \
+      torch-npu==2.9.0 \
+      pyyaml setuptools decorator attrs psutil absl-py cloudpickle scipy tornado \
+      -i https://mirrors.aliyun.com/pypi/simple/
+
+RUN python3 -c "import torch, torch_npu; print(torch.__version__); print(torch_npu.__version__)"
+
+CMD ["bash"]
